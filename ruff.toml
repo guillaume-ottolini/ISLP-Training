@@ -1,0 +1,12 @@
+[tool.ruff]
+# Jupyter notebook support and configuration
+extend-exclude = ["notebooks/"]
+
+[tool.ruff.lint]
+# Ignore E703 (unnecessary semicolon) - used in notebooks to suppress output
+# Ignore F811 (redefinition of unused) - common in notebooks with cell imports
+extend-ignore = ["E703", "F811"]
+
+# Per-file rules for notebooks
+[tool.ruff.per-file-ignores]
+"notebooks/*.ipynb" = ["E703", "F811"]
