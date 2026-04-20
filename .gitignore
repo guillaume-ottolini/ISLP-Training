@@ -208,3 +208,8 @@ pyrightconfig.json
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Generated graph exports (notebook artifacts)
+notebooks/Figure.png
+notebooks/Figure.pdf
+notebooks/Figure_updated.jpg
